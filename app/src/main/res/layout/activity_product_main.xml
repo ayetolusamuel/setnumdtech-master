@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="180dp"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:background="@drawable/background"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/productImageView"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:civ_circle_background_color="@color/aluminum"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FF000000"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/productImageView"
+        android:layout_marginVertical="@dimen/activity_horizontal_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/productNameTextView"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textSize="18sp"
+             android:text="HDMI-Wall-Face-Plate-Single-Panel" />
+
+           <TextView
+                android:id="@+id/productCategoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Category"
+                android:textSize="10sp"
+               android:textColor="#ffffff"
+                android:textStyle="italic|bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/productPriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="price"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
